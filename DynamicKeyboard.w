@@ -99,17 +99,6 @@ DEFINE TEMP-TABLE keyboard NO-UNDO SERIALIZE-NAME "keyboard"
 
 
     DEFINE DATASET keyboardLayout SERIALIZE-NAME "keyboardLayout" FOR keyboardLayer, keyboard DATA-RELATION FOR keyboardLayer, keyboard RELATION-FIELDS(Layer, Layer) NESTED.
-    
-    
-    DATASET keyboardLayout:READ-XML("FILE", "keyboardLayoutLayer1.xml", "EMPTY", ?, ?).
-
-    DATASET keyboardLayout:READ-XML("FILE", "keyboardLayoutLayer2.xml", "APPEND", ?, ?).
-
-    DATASET keyboardLayout:READ-XML("FILE", "keyboardLayoutLayer3.xml", "APPEND", ?, ?).
-
-    DATASET keyboardLayout:READ-XML("FILE", "keyboardLayoutLayer4.xml", "APPEND", ?, ?).
-
-    DATASET keyboardLayout:WRITE-XML("FILE", "keyboardLayoutDebug.xml", TRUE).
 
 /* _UIB-CODE-BLOCK-END */
 &ANALYZE-RESUME
@@ -126,7 +115,6 @@ DEFINE TEMP-TABLE keyboard NO-UNDO SERIALIZE-NAME "keyboard"
 &Scoped-define FRAME-NAME DEFAULT-FRAME
 
 /* Standard List Definitions                                            */
-&Scoped-Define ENABLED-OBJECTS FILL-IN-24 
 &Scoped-Define DISPLAYED-OBJECTS FILL-IN-24 
 
 /* Custom List Definitions                                              */
@@ -217,7 +205,10 @@ ASSIGN C-Winn = CURRENT-WINDOW.
   NOT-VISIBLE,,RUN-PERSISTENT                                           */
 /* SETTINGS FOR FRAME DEFAULT-FRAME
    FRAME-NAME                                                           */
+/* SETTINGS FOR FILL-IN FILL-IN-24 IN FRAME DEFAULT-FRAME
+   NO-ENABLE                                                            */
 ASSIGN 
+       FILL-IN-24:HIDDEN IN FRAME DEFAULT-FRAME           = TRUE
        FILL-IN-24:READ-ONLY IN FRAME DEFAULT-FRAME        = TRUE.
 
 /* _RUN-TIME-ATTRIBUTES-END */
@@ -257,6 +248,7 @@ ON WINDOW-CLOSE OF C-Winn /* <insert window title> */
 DO:
   /* This event will close the window and terminate the procedure.  */
   APPLY "CLOSE":U TO THIS-PROCEDURE.
+ 
   
 END.
 
@@ -296,7 +288,7 @@ DO ON ERROR   UNDO MAIN-BLOCK, LEAVE MAIN-BLOCK
    
   RUN enable_UI.
   
-  
+    RUN LoadKeyboardLayout.
 
     RUN createLayout (INPUT ?).
     
@@ -454,8 +446,7 @@ PROCEDURE enable_UI :
 ------------------------------------------------------------------------------*/
   DISPLAY FILL-IN-24 
       WITH FRAME DEFAULT-FRAME.
-  ENABLE FILL-IN-24 
-      WITH FRAME DEFAULT-FRAME.
+  VIEW FRAME DEFAULT-FRAME.
   {&OPEN-BROWSERS-IN-QUERY-DEFAULT-FRAME}
 END PROCEDURE.
 
@@ -575,11 +566,30 @@ PROCEDURE Keyboard-Process-Key :
      END.
      ELSE
         keyPress = pKeyValue.
+        
+     
      
      FILL-IN-24:SCREEN-VALUE IN FRAME {&FRAME-NAME} = FILL-IN-24:SCREEN-VALUE IN FRAME {&FRAME-NAME} + " " + keyPress.
      
-    /* THE MAGIC DOT NET */ 
-    System.Windows.Forms.SendKeys:Send(keyPress).
+     /** Overide the keyboard left & RIGHT navigation for decimal fill-in fields as the .NET SendKeys functions does not work correctly..**/
+     
+     IF FOCUS:TYPE                          EQ "FILL-IN" AND 
+        FOCUS:DATA-TYPE                     EQ "DECIMAL" AND
+        LOOKUP(keyPress, "~{LEFT},~{RIGHT}") GT 0 THEN 
+        DO:
+ 
+        CASE TRUE:
+            WHEN keyPress EQ "~{LEFT}" THEN
+                APPLY "CURSOR-LEFT"  TO FOCUS.
+            
+            WHEN keyPress EQ "~{RIGHT}" THEN
+                APPLY "CURSOR-RIGHT" TO FOCUS. 
+        END CASE.
+ 
+     END.
+     ELSE
+              /* THE MAGIC DOT NET */ 
+        System.Windows.Forms.SendKeys:Send(keyPress).
 
 /*     IF pShiftKey THEN                                               */
 /*     DO:                                                             */
@@ -618,6 +628,29 @@ PROCEDURE Keyboard-Process-Key :
 /*          FILL-IN-22:SCREEN-VALUE =  STRING(KEYLABEL(LASTKEY))  + ' ' + STRING(pi_vk_code). */
 /*       END.                                                                                 */
   RETURN.
+END PROCEDURE.
+
+/* _UIB-CODE-BLOCK-END */
+&ANALYZE-RESUME
+
+&ANALYZE-SUSPEND _UIB-CODE-BLOCK _PROCEDURE LoadKeyboardLayout C-Winn 
+PROCEDURE LoadKeyboardLayout :
+/*------------------------------------------------------------------------------
+  Purpose:     
+  Parameters:  <none>
+  Notes:       
+------------------------------------------------------------------------------*/
+    DATASET keyboardLayout:READ-XML("FILE", "keyboardLayoutLayer1.xml", "EMPTY", ?, ?).
+
+    DATASET keyboardLayout:READ-XML("FILE", "keyboardLayoutLayer2.xml", "APPEND", ?, ?).
+
+    DATASET keyboardLayout:READ-XML("FILE", "keyboardLayoutLayer3.xml", "APPEND", ?, ?).
+
+    DATASET keyboardLayout:READ-XML("FILE", "keyboardLayoutLayer4.xml", "APPEND", ?, ?).
+
+    DATASET keyboardLayout:WRITE-XML("FILE", "keyboardLayoutDebug.xml", TRUE).
+    
+    RETURN.
 END PROCEDURE.
 
 /* _UIB-CODE-BLOCK-END */
