@@ -380,7 +380,7 @@
     <image-up/>
     <image-dwn/>
   </keyboard>
-  <keyboard key-label="&lt;" shift-key="false" ctrl-key="false" alt-key="false" key-value="&lt;" layer="2" row="4" pos="5">
+  <keyboard key-label="&lt;" shift-key="false" ctrl-key="false" alt-key="false" key-value="{LEFT}" layer="2" row="4" pos="5">
     <special-lKey/>
     <key-value-Literal/>
     <width>61</width>
@@ -390,7 +390,7 @@
     <image-up/>
     <image-dwn/>
   </keyboard>
-  <keyboard key-label=">" shift-key="false" ctrl-key="false" alt-key="false" key-value=">" layer="2" row="4" pos="6">
+  <keyboard key-label=">" shift-key="false" ctrl-key="false" alt-key="false" key-value="{RIGHT}" layer="2" row="4" pos="6">
     <special-lKey/>
     <key-value-Literal/>
     <width>61</width>
