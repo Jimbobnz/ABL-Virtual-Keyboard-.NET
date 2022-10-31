@@ -148,7 +148,7 @@ DEFINE VARIABLE FILL-IN-24 AS CHARACTER FORMAT "X(256)":U
 /* ************************  Frame Definitions  *********************** */
 
 DEFINE FRAME DEFAULT-FRAME
-     FILL-IN-24 AT ROW 13.86 COL 2 COLON-ALIGNED NO-LABEL WIDGET-ID 18 NO-TAB-STOP 
+     FILL-IN-24 AT ROW 13.88 COL 2 COLON-ALIGNED NO-LABEL WIDGET-ID 18 NO-TAB-STOP 
     WITH 1 DOWN NO-BOX KEEP-TAB-ORDER OVERLAY 
          SIDE-LABELS NO-UNDERLINE THREE-D 
          AT COL 1 ROW 1
@@ -173,11 +173,11 @@ IF SESSION:DISPLAY-TYPE = "GUI":U THEN
   CREATE WINDOW C-Winn ASSIGN
          HIDDEN             = YES
          TITLE              = "<insert window title>"
-         HEIGHT             = 20.14
-         WIDTH              = 213.8
-         MAX-HEIGHT         = 48.43
+         HEIGHT             = 20.09
+         WIDTH              = 213.75
+         MAX-HEIGHT         = 48.44
          MAX-WIDTH          = 384
-         VIRTUAL-HEIGHT     = 48.43
+         VIRTUAL-HEIGHT     = 48.44
          VIRTUAL-WIDTH      = 384
          SHOW-IN-TASKBAR    = no
          RESIZE             = yes
@@ -354,7 +354,7 @@ PROCEDURE createLayout :
     DO:
         /** If "caps lock" is 'on' show 
             layer 1 else layer 2 **/
-        IF getCapsLockState() = 1 THEN
+        IF getCapsLockState() EQ 1 THEN
             showLayer = 1.
         ELSE
             showLayer = 2.
@@ -378,19 +378,24 @@ PROCEDURE createLayout :
               FRAME     = FRAME {&FRAME-NAME}:HANDLE
               NO-FOCUS  = TRUE
               TAB-STOP  = FALSE
+              VISIBLE   = TRUE
               SENSITIVE = keyboard.SENSITIVE
               BGCOLOR   = (IF keyboard.KeyValue EQ "" THEN 12 ELSE ?)
-              VISIBLE   = TRUE
               TRIGGERS:
                 ON CHOOSE PERSISTENT RUN Keyboard-Process-Key IN THIS-PROCEDURE ( INPUT keyboard.KeyValue, INPUT keyboard.shiftKey, INPUT keyboard.ctrlKey, INPUT keyboard.altKey).
               END TRIGGERS.
-              
+         
          ASSIGN
             keyboard.WIDGET-HANDLE = but1:HANDLE.
-            
+         
+        IF keyboard.imageUp NE "" AND SEARCH(keyboard.imageUp) NE "" THEN 
+            but1:LOAD-IMAGE-UP(SEARCH(keyboard.imageUp)).                  
+             
+        IF keyboard.imageDown NE "" AND SEARCH(keyboard.imageDown) NE "" THEN 
+            but1:LOAD-IMAGE-DOWN(SEARCH(keyboard.imageDown)).    
+           
         IF FIRST-OF(keyboard.KeyboardRow) THEN
-        
-                   keyHeightAtStartofRow = keyboard.KeyHeight.
+            keyHeightAtStartofRow = keyboard.KeyHeight.
         
               
         IF NOT LAST-OF(keyboard.KeyboardRow) THEN
