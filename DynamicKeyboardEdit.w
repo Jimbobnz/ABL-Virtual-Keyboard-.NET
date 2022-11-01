@@ -14,7 +14,7 @@
   Output Parameters:
       <none>
 
-  Author: 
+  Author: James Bowen
 
   Created: 
 
