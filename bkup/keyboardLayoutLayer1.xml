@@ -1,0 +1,445 @@
+<?xml version="1.0"?>
+<keyboardLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <keyboard key-label="Q" shift-key="false" ctrl-key="false" alt-key="false" key-value="Q" layer="1" row="1" pos="1">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="W" shift-key="false" ctrl-key="false" alt-key="false" key-value="W" layer="1" row="1" pos="2">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="E" shift-key="false" ctrl-key="false" alt-key="false" key-value="E" layer="1" row="1" pos="3">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="R" shift-key="false" ctrl-key="false" alt-key="false" key-value="R" layer="1" row="1" pos="4">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="T" shift-key="false" ctrl-key="false" alt-key="false" key-value="T" layer="1" row="1" pos="5">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="Y" shift-key="false" ctrl-key="false" alt-key="false" key-value="Y" layer="1" row="1" pos="6">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="U" shift-key="false" ctrl-key="false" alt-key="false" key-value="U" layer="1" row="1" pos="7">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="I" shift-key="false" ctrl-key="false" alt-key="false" key-value="I" layer="1" row="1" pos="8">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="O" shift-key="false" ctrl-key="false" alt-key="false" key-value="O" layer="1" row="1" pos="9">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="P" shift-key="false" ctrl-key="false" alt-key="false" key-value="P" layer="1" row="1" pos="9">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="Backspace" shift-key="false" ctrl-key="false" alt-key="false" key-value="{BACKSPACE}" layer="1" row="1" pos="9">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>124</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="A" shift-key="false" ctrl-key="false" alt-key="false" key-value="A" layer="1" row="2" pos="1">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>15</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="S" shift-key="false" ctrl-key="false" alt-key="false" key-value="S" layer="1" row="2" pos="2">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="D" shift-key="false" ctrl-key="false" alt-key="false" key-value="D" layer="1" row="2" pos="3">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="F" shift-key="false" ctrl-key="false" alt-key="false" key-value="F" layer="1" row="2" pos="4">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="G" shift-key="false" ctrl-key="false" alt-key="false" key-value="G" layer="1" row="2" pos="5">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="H" shift-key="false" ctrl-key="false" alt-key="false" key-value="H" layer="1" row="2" pos="6">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="J" shift-key="false" ctrl-key="false" alt-key="false" key-value="J" layer="1" row="2" pos="6">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="K" shift-key="false" ctrl-key="false" alt-key="false" key-value="K" layer="1" row="2" pos="7">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="L" shift-key="false" ctrl-key="false" alt-key="false" key-value="L" layer="1" row="2" pos="8">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="&quot;" shift-key="true" ctrl-key="false" alt-key="false" key-value="&quot;" layer="1" row="2" pos="9">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="Enter" shift-key="false" ctrl-key="false" alt-key="false" key-value="{ENTER}" layer="1" row="2" pos="10">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>109</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="SHIFT" shift-key="false" ctrl-key="false" alt-key="false" key-value="-2" layer="1" row="3" pos="1">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="Z" shift-key="false" ctrl-key="false" alt-key="false" key-value="Z" layer="1" row="3" pos="2">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="X" shift-key="false" ctrl-key="false" alt-key="false" key-value="X" layer="1" row="3" pos="3">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="C" shift-key="false" ctrl-key="false" alt-key="false" key-value="C" layer="1" row="3" pos="4">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="V" shift-key="false" ctrl-key="false" alt-key="false" key-value="V" layer="1" row="3" pos="5">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="B" shift-key="false" ctrl-key="false" alt-key="false" key-value="B" layer="1" row="3" pos="6">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="N" shift-key="false" ctrl-key="false" alt-key="false" key-value="N" layer="1" row="3" pos="7">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="M" shift-key="false" ctrl-key="false" alt-key="false" key-value="M" layer="1" row="3" pos="8">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label=";" shift-key="false" ctrl-key="false" alt-key="false" key-value=";" layer="1" row="3" pos="9">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label=":" shift-key="true" ctrl-key="false" alt-key="false" key-value=":" layer="1" row="3" pos="10">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="!" shift-key="true" ctrl-key="false" alt-key="false" key-value="!" layer="1" row="3" pos="11">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="SHIFT" shift-key="false" ctrl-key="false" alt-key="false" key-value="-2" layer="1" row="3" pos="12">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="&amp;&amp;123" shift-key="false" ctrl-key="false" alt-key="false" key-value="-3" layer="1" row="4" pos="1">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="" shift-key="false" ctrl-key="false" alt-key="false" key-value="" layer="1" row="4" pos="2">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>false</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="" shift-key="false" ctrl-key="false" alt-key="false" key-value="" layer="1" row="4" pos="3">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>false</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="SPACE" shift-key="false" ctrl-key="false" alt-key="false" key-value="{SPACE}" layer="1" row="4" pos="4">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>376</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="&lt;" shift-key="false" ctrl-key="false" alt-key="false" key-value="{LEFT}" layer="1" row="4" pos="5">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label=">" shift-key="false" ctrl-key="false" alt-key="false" key-value="{RIGHT}" layer="1" row="4" pos="6">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>
+  <keyboard key-label="C+S+A+F2" shift-key="true" ctrl-key="true" alt-key="true" key-value="{F2}" layer="1" row="4" pos="6">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>58</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard>  
+  
+  <keyboard key-label="Select All" shift-key="false" ctrl-key="true" alt-key="false" key-value="a" layer="1" row="5" pos="1">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>28</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard> 
+  
+  <keyboard key-label="COPY" shift-key="false" ctrl-key="true" alt-key="false" key-value="c" layer="1" row="5" pos="2">
+    <special-lKey/>
+    <key-value-Literal/>
+    <width>61</width>
+    <height>28</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard> 
+  
+  <keyboard key-label="PASTE" shift-key="false" ctrl-key="true" alt-key="false" key-value="v" layer="1" row="5" pos="3">
+    <width>61</width>
+    <height>28</height>
+    <indent>0</indent>
+    <sensitive>true</sensitive>
+    <image-up/>
+    <image-dwn/>
+  </keyboard> 
+  
+</keyboardLayout>

@@ -14,7 +14,7 @@
   Output Parameters:
       <none>
 
-  Author: 
+  Author: James Bowen
 
   Created: 
 
@@ -360,6 +360,7 @@ PROCEDURE createLayout :
               VISIBLE   = TRUE
               selectable = true
               SENSITIVE =  true
+              private-data = string(xpos - keyboard.indent)
               BGCOLOR   = (IF keyboard.KeyValue EQ "" THEN 12 ELSE ?)
               TRIGGERS:
                 ON selection persistent RUN Keyboard-Get-Key IN THIS-PROCEDURE ( input rowid(keyboard) ).
@@ -511,11 +512,6 @@ PROCEDURE SaveKeyboardXML :
     run updateSatus in source-procedure (input "Saved: " + pchFileName ). 
     
     pchFileName =  pchFullPathname + '\' + pchFileName. 
-    
-    
-/*     DEFINE TEMP-TABLE keyboardLayer NO-UNDO SERIALIZE-NAME "keyboardLayer"                */
-/*     FIELD Layer        AS INTEGER SERIALIZE-NAME "layer"        XML-NODE-TYPE "ATTRIBUTE" */
-/*     FIELD keyboardDesc AS CHARACTER SERIALIZE-NAME "keyboard-desc".                       */
     
     for each keyboard
         break by keyboard.Layer:
